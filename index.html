@@ -1,11 +1,168 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!--- Google Fonts   --->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+
+    <!--- Font Awesome --->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Gridlex -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/gridlex/2.7.1/gridlex.min.css">
+
+    <link rel="stylesheet" href="/style.css">
+
+    <title>Mionnay.com</title>
+   
 </head>
+
 <body>
-    
+
+    <!---------- Header ---------->
+
+    <header class="banner padding-2-5 grid bg-overlay bg-overlay-gradient">
+        <div class="col-12 grid-top header-nav">
+            <div class="col-5-middle">
+                <h2><a href="/" class="logo">Mionnay McKee</a></h2>
+            </div>
+
+            <nav class="col-7-middle right">
+                <a href="/">Home</a>
+                <a href="#portfolio">Portfolio</a>
+                <a href="#about">About</a>
+                <a href="#contact">Contact</a>
+            </nav>
+
+        </div>
+
+        <div class="col-12 right">
+            <h1 class="fade-in"><span>Mionnay</span> builds websites.</h1>
+        </div>
+
+    </header>
+
+    <!---------- Porfolio ---------->
+
+    <section class="grid-middle bg-light padding-top">
+
+        <div class="col-12-top center">
+            <h2 id="#portfolio">Portfolio</h2>
+        </div>
+
+    </section>
+
+    <section class="bg-light grid padding-2-5">
+
+            <div class="col-6_sm-12">
+                <div class="bg-image bg-sleep-co landscape"></div>
+            </div>
+
+            <div class="col-6_sm-12-middle padding-two">
+                <h3>The Sleep Co</h3>
+                <p>Project Description</p>
+                <a href="https://brave-clarinet.cloudvent.net" target="_blank" class="button">Visit live site</a>
+            </div>
+    </section>
+
+    <section class="bg-light grid flex-flip-sm padding-2-5">
+
+            <div class="col-6_sm-12 right margin-auto padding-two">
+                <h3>Negroni Cocktail Bar</h3>
+                <p>Project Description</p>
+                <a href="https://beautiful-dogfish.cloudvent.net" target="_blank" class="button">Visit live site</a>
+
+            </div>
+
+            <div class="col-6_sm-12">
+                <div class="bg-image bg-negroni landscape"></div>
+            </div>
+    </section>
+
+    <section class="bg-light grid padding-2-5">
+            <div class="col-6_sm-12">
+                <div class="bg-image bg-zen-studio landscape"></div>
+            </div>
+
+            <div class="col-6_sm-12-middle padding-two">
+                <h3>Zen Studio</h3>
+                <p>Project Description</p>
+                <a href="https://cheerful-kingfisher.cloudvent.net" target="_blank" class="button">Visit live site</a>
+
+            </div>
+    </section>
+
+    <section class="bg-light grid flex-flip-sm padding-2-5">
+            <div class="col-6_sm-12 right margin-auto padding-two">
+                <h3>Bunker Hotel</h3>
+                <p>Project Description</p>
+                <a href="https://enigmatic-elephant.cloudvent.net" target="_blank" class="button">Visit live site</a>
+
+            </div>
+
+            <div class="col-6_sm-12">
+                <div class="bg-image bg-bunker landscape"></div>
+            </div>
+        
+    </section>
+
+   <!---------- About ---------->
+
+   <section class="grid-middle bg-mm bg-dark-accent padding-2-5">
+
+    <div class="col-12 center padding-1">
+        <h2 id="#about">About</h2>
+    </div>
+
+    <div class="col-5 right">
+        <h2 class="fade-in">Hi, I'm Mionnay</h2>
+    </div>
+
+    <div class="col-7 padding-2-5">
+        <p class="fade-in">I am a frontend web developer specializing in custom static websites for small businesses and solopreneurs. In addition to my web experience, I have over a decade of experience in law firm administration. Check out <a href="https://mckeevirtualsolutions.com" target="_blank" class="mvs">McKee Virtual Solutions</a> for additional info about my services as an online business manager.</p>
+    </div>
+
+   </section>
+
+   <!---------- Contact ---------->
+
+   <section class="grid-middle bg-light padding">
+    <div class="col-5 right">
+        <h2 id="#contact" class="fade-in">Get In Touch</h2>
+    </div>
+    <div class="col-7 padding-2-5">
+        <form name="porfolio" netlify>
+            
+            <label for="_name">Name</label> 
+            <input type="text" name="name" id="name" placeholder="Name" required />
+            
+            <label for="_replyto">Email</label> 
+            <input type="email" name="email" id="email" placeholder="Email" required />
+            
+            <label for="message">Message</label> 
+            <textarea name="message" id="message" placeholder="Your Message" required></textarea>
+            
+            <button type="submit" class="form button">Send</button>
+            
+        </form>
+    </div>
+   </section>
+
+   <!---------- Footer ---------->
+
+   <footer class="grid bg-light-accent padding-05">
+    <div class="col-12 center">
+        <p clas="sub-footer">Website by <a href="https://mckeevirtualsolutions.com" target="_blank">McKee Virtual Solutions</a></p>
+    </div>
+   </footer>
+
 </body>
 </html>
