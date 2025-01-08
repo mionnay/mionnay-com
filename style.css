@@ -13,6 +13,8 @@
     box-sizing: border-box;
 }
 
+html { scroll-behavior: smooth; }
+
 [class*=col] { padding: 0; }
 [class*=grid] { margin: 0; }
 
@@ -21,6 +23,8 @@ body {
     color: var(--black);
     
 }
+
+/* ------------- Utility Classes --------------  */
 
 
 .left { text-align: left; }
@@ -34,7 +38,7 @@ body {
 .padding-1 { padding: 1rem; }
 .padding-left { padding-left: 2rem; }
 .padding-top { padding-top: 2%; }
-.padding-horizontal { padding: 0 2%}
+.padding-horizontal { padding: 0 5%}
 
 .margin-auto { 
     margin: auto;
@@ -70,7 +74,7 @@ body {
 .light-text { color: var(--white); }
 .caps { text-transform: uppercase; }
 
-/* General typography */
+/* ------------- Typography --------------  */
 
 h2, h3, h4, h5, h6 {
     font-family: var(--heading);
@@ -97,9 +101,7 @@ h2  {
     font-size: 2.2rem;
     font-weight: 500;  }
 
-.logo a {
-    border-bottom: none;
-}
+.logo a { border-bottom: none; }
 
 h3  { 
     font-size: 1.8rem;
@@ -135,13 +137,9 @@ a {
     border-bottom: 1px solid;
 }
 
-a:hover {
-    color: var(--white);
-}
+a:hover { color: var(--white); }
 
-.mvs:hover {
-    color: var(--light-accent);
-}
+.mvs:hover { color: var(--light-accent); }
 
 hr {
 border: none;
@@ -169,17 +167,13 @@ margin-bottom: 1rem;
 }
 
 @keyframes fade-in {
-    0% {
-      opacity: 0;
+
+    0% { opacity: 0;
     }
-    100% {
-      opacity: 0.8;
-    }
+    100% { opacity: 0.9; }
   }
   
-  .fade-in {
-    animation: fade-in 2s ease-in forwards;
-  }
+  .fade-in { animation: fade-in 3s ease-in forwards; }
 
 /* ------------- Images & Background Images--------------  */
 
@@ -210,7 +204,6 @@ img { max-width: 100%; }
    background-origin: padding-box;
 }
 
-
 .landscape { aspect-ratio: 16/9; }
 
 /* ------------- Form Styles --------------  */
@@ -233,9 +226,7 @@ form textarea:focus {
   border-color: var(--light-accent);
 }
 
-textarea {
-  min-height: 5rem;
-}
+textarea { min-height: 5rem; }
 
 form label {
   margin-top: 0.5rem;
@@ -278,9 +269,7 @@ header a {
     border: none;
 }
 
-nav a {
-    padding: 0.5rem;
-}
+nav a { padding: 0.5rem; }
 
 .banner {
     background-image: url('/images/banner.jpg');
@@ -324,10 +313,12 @@ nav a {
 
 @media (max-width: 48em) {
 
-    .flex-flip-sm {
+    .flex-flip-sm { flex-flow: column-reverse; }
 
-        flex-flow: column-reverse; 
-    
-    }
+    .hide-sm { display: none; }
+
+    .bg-mm { background-image: url('/images/profile-opacity-25.png');}
+
+    .padding-horizontal-mobile { padding: 1rem 5%; }
 
 }
