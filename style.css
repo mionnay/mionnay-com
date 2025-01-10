@@ -44,11 +44,6 @@ body {
     margin: auto;
     width: 100%; }
 
-.capped-width {
-    max-width: 1100px;
-    margin: auto;
-}
-
 .tall-40 { min-height: 40vh; }
 .tall-100 { min-height: 100vh; }
 
@@ -72,7 +67,6 @@ body {
 }
 
 .light-text { color: var(--white); }
-.caps { text-transform: uppercase; }
 
 /* ------------- Typography --------------  */
 
@@ -101,8 +95,6 @@ h2  {
     font-size: 2.2rem;
     font-weight: 500;  }
 
-.logo a { border-bottom: none; }
-
 h3  { 
     font-size: 1.8rem;
     font-weight: 400;  }
@@ -127,10 +119,6 @@ p:last-child {
     margin-bottom:0;
 }
 
-.emphasis {
-    font-size: 1.2rem;
-}
-
 a {
     text-decoration: none;
     color: inherit;
@@ -140,13 +128,6 @@ a {
 a:hover { color: var(--white); }
 
 .mvs:hover { color: var(--light-accent); }
-
-hr {
-border: none;
-border-bottom: 3px solid;
-width: 4rem;
-margin-bottom: 1rem;
-}
 
 .button {
     text-decoration: none;
@@ -168,9 +149,8 @@ margin-bottom: 1rem;
 
 @keyframes fade-in {
 
-    0% { opacity: 0;
-    }
-    100% { opacity: 0.9; }
+    0% { opacity: 0; }
+    100% { opacity: 1; }
   }
   
   .fade-in { animation: fade-in 3s ease-in forwards; }
@@ -178,7 +158,6 @@ margin-bottom: 1rem;
 /* ------------- Images & Background Images--------------  */
 
 img { max-width: 100%; }
-
 
 .bg-image {
     background-color: var(--dark-accent);
@@ -192,7 +171,7 @@ img { max-width: 100%; }
 .bg-sleep-co { background-image: url('/images/projects/sleepco2.png'); }
 .bg-design-collective { background-image: url('/images/projects/designcollective.png'); }
 .bg-negroni { background-image: url('/images/projects/negroni2.png'); }
-.bg-zen-studio { background-image: url('/images/projects/zenstudio.png'); }
+.bg-zen-studio { background-image: url('/images/projects/zenstudio2.png'); }
 .bg-bunker { background-image: url('/images/projects/bunker.png'); }
 
 .bg-mm {
@@ -271,6 +250,8 @@ header a {
 
 nav a { padding: 0.5rem; }
 
+.logo a { border-bottom: none; }
+
 .banner {
     background-image: url('/images/banner.jpg');
     background-size: cover;
@@ -279,9 +260,7 @@ nav a { padding: 0.5rem; }
     min-height: 50vh;
 }
 
-.bg-overlay {
-    position: relative;
-  }
+.bg-overlay { position: relative; }
   
   .bg-overlay::before {
     content: ""; 
@@ -299,7 +278,7 @@ nav a { padding: 0.5rem; }
 
   .bg-overlay-gradient::before {
    
-    background: radial-gradient(farthest-side at 75% 60%,rgba(37,36,34,0.8), rgba(64,61,57,0.1)); 
+    background: radial-gradient(farthest-side at 75% 60%,rgba(37,36,34,0.7), rgba(64,61,57,0.1)); 
 
   }
 
@@ -307,7 +286,6 @@ nav a { padding: 0.5rem; }
     opacity: 0.8;
     font-size: 0.9rem;
 }
-
 
 /* ------------- Media Queries --------------  */
 
@@ -320,5 +298,11 @@ nav a { padding: 0.5rem; }
     .bg-mm { background-image: url('/images/profile-opacity-25.png');}
 
     .padding-horizontal-mobile { padding: 1rem 5%; }
+
+    .mobile-nav { display: inline-block; }
+
+    .right-mobile {text-align: right; }
+
+    .pad-right-mobile { padding-right: 5%; }
 
 }
