@@ -1,8 +1,8 @@
 :root {
-    --white: #fffcf2;
-    --black: #252422;
-    --light-accent: #ccc589;
-    --dark-accent: #403d39; 
+    --white: #e2e2e4;
+    --black: #35332d;
+    --light-accent: #65402a;
+    --dark-accent: #3a1e14; 
     --heading: "Work Sans", sans-serif;
     --body: "Lato", sans-serif;
   }
@@ -59,7 +59,7 @@ body {
 
 .bg-light-accent { 
     background-color: var(--light-accent);
-    color: var(--black); }
+    color: var(--white); }
 
 .bg-dark-accent { 
     background-color: var(--dark-accent);
